@@ -2,15 +2,15 @@
 
 Scryer Graph is a lightweight RDF graph database implemented in [Scryer Prolog](https://scryer.pl/), built primarily as a learning project to explore logic programming, reasoning, and database concepts. It offers a simple REPL interface for storing and querying RDF triples with graph contexts, including basic operations like adding data, pattern matching, and persistence.
 
-**TL;DR**: A hands-on Prolog-based RDF database for adding, querying, and persisting the graph to improve the understanding of Scryer Prolog and logical reasoning.
+TL;DR: A hands-on Prolog-based RDF database for adding, querying, and persisting the graph to improve the understanding of Scryer Prolog and logical reasoning.
 
 ## Features
 
-- **RDF Triple Storage**: Store triples in the form `(Subject, Predicate, Object, Graph)` using Prolog's dynamic predicates.
-- **Basic Querying**: Support for exact matches and placeholders (use "who" to match any value) in queries.
-- **Persistence**: Save and load database state to/from files.
-- **REPL Interface**: Interactive command-line interface for operations.
-- **Extensible**: Built with Prolog for easy addition of reasoning or advanced queries.
+- RDF Triple Storage: Store triples in the form `(Subject, Predicate, Object, Graph)` using Prolog's dynamic predicates.
+- Basic Querying: Support for exact matches and placeholders (use "who" to match any value) in queries.
+- Persistence: Save and load database state to/from files.
+- REPL Interface: Interactive command-line interface for operations.
+- Extensible: Built with Prolog for easy addition of reasoning or advanced queries.
 
 ## Prerequisites
 
@@ -89,19 +89,10 @@ make clean
 
 ## Future Enhancements
 
-- **Reasoning**: Add inference rules for deriving new triples (e.g., transitivity).
-- **Advanced Query Language**: Implement a custom DSL or SPARQL subset for complex queries.
-- **Performance**: Indexing and optimizations for larger datasets.
-- **Web Interface**: REST API or web UI for non-Prolog users.
-
-## Contributing
-
-Contributions are welcome! Please submit issues or pull requests for bugs, features, or improvements. I appreciate feedback from the community. 
-
+- Reasoning: Add inference rules for deriving new triples (e.g., transitivity).
+- Advanced Query Language: Implement a custom DSL or SPARQL subset for complex queries.
+- Performance: Indexing and optimizations for larger datasets.
+- WASM Compilation: Compile to WebAssembly for browser-based usage.
 ## License
 
 This project is open-source under the MIT License. See LICENSE for details.
-
-## Acknowledgments
-
-Built with Scryer Prolog. Inspired by RDF and graph database concepts.
