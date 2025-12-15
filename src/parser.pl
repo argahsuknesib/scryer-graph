@@ -10,8 +10,10 @@ command(quit) --> "quit".
 command(quit) --> "exit".
 command(save(F)) --> "save", ws, name_str(F).
 command(load(F)) --> "load", ws, name_str(F).
+command(load_rules(F)) --> "load_rules", ws, name_str(F).
 command(add(Subject,Predicate,Object,Graph)) --> "add", ws, term(Subject), ws, term(Predicate), ws, term(Object), ws, term(Graph).
 command(query(Subject,Predicate,Object,Graph)) --> term(Subject), ws, term(Predicate), ws, term(Object), ws, term(Graph).
+command(reason(Subject,Predicate,Object,Graph)) --> "reason", ws, term(Subject), ws, term(Predicate), ws, term(Object), ws, term(Graph).
 
 % Parsing Terms
 term(Term) --> "null", { Term = null }.
